@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/" text="Back" color="primary" mode="ios">
+      </ion-back-button>
+    </ion-buttons>
+    <ion-title slot="end">Productos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let c of componentes" [routerLink]="c.redirecTo" detail="true">
+      <ion-icon [name]="c.icon" slot="start" color="primary"></ion-icon>
+      {{c.name}}
+    </ion-item>
+  </ion-list>
+  <br><br><br>
+  <ion-list>
+    <ion-label class="ion-margin">Microsoft Xbox Series S</ion-label>
+    <ion-item>
+      <img src="/assets/xbox.png" alt="">
+    </ion-item>
+    <br><br><br>
+    <ion-label class="ion-margin">Apple iPhone 11 (64 GB / Black)</ion-label>
+    <ion-item>
+      <img src="/assets/iphone1.png" alt="">
+    </ion-item>
+    <br><br><br>
+    <ion-label class="ion-margin">Lenovo IdeaPad Gaming 3</ion-label>
+    <ion-item>
+      <img src="/assets/notebook1.png" alt="">
+    </ion-item>
+    <br><br><br>
+    <ion-label class="ion-margin">Logitech G203 Lightsync Black</ion-label>
+    <ion-item>
+      <img src="/assets/mouse1.png" alt="">
+    </ion-item>
+    <br><br><br>
+
+  </ion-list>
+</ion-content>

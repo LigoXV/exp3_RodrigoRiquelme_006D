@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/" text="Back" color="primary" mode="ios">
+      </ion-back-button>
+    </ion-buttons>
+    <ion-title slot="end">Formulario</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="floating">Nombre</ion-label>
+    <ion-input type="text" [(ngModel)]="newCrud.nombre"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Nombre de usuario</ion-label>
+    <ion-input type="text" [(ngModel)]="newCrud.nomusuario"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Correo Electronico</ion-label>
+    <ion-input type="text" [(ngModel)]="newCrud.correo"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Contraseña</ion-label>
+    <ion-input type="text" [(ngModel)]="newCrud.contrasena"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Numero de contacto</ion-label>
+    <ion-input type="text" [(ngModel)]="newCrud.fono"></ion-input>
+  </ion-item>
+  
+  <ion-button (click)="addDatos()" expand="full">
+    Agregar datos
+  </ion-button>
+</ion-content>
